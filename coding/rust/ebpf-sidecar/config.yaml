@@ -1,0 +1,38 @@
+# eBPF Sidecar Configuration
+# 
+# This file configures the sidecar's monitoring behavior.
+# All settings have sensible defaults - this file is optional.
+
+# Target process/container filtering
+target:
+  # Monitor specific PID (0 = all processes)
+  pid: 0
+  
+  # Alternative: monitor by process name
+  # process_name: "nginx"
+  
+  # Alternative: monitor by cgroup (for containers)
+  # cgroup: "/sys/fs/cgroup/system.slice/docker-abc123.scope"
+  
+  # Filter to specific ports (empty = all ports)
+  # ports: [80, 443, 8080, 5432]
+  ports: []
+
+# Prometheus metrics configuration
+metrics:
+  # Port for Prometheus scraping
+  port: 9090
+  
+  # How often to collect metrics from eBPF maps (seconds)
+  interval_secs: 5
+  
+  # Enable HTTP layer 7 parsing (experimental)
+  enable_http: false
+
+# Logging configuration  
+logging:
+  # Log level: trace, debug, info, warn, error
+  level: info
+  
+  # Enable verbose eBPF debug logging
+  ebpf_debug: false

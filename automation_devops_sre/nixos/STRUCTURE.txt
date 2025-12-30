@@ -1,0 +1,274 @@
+NixOS ELI5 Course - Complete Structure
+========================================
+
+nixos-course/
+│
+├── README.md
+│   └── Main course entry point
+│       Course overview & navigation guide
+│
+├── QUICKSTART.md
+│   └── Path selection & recommendations
+│       Learning paths by role, time, goals
+│
+├── CURRICULUM.md
+│   └── Complete curriculum overview
+│       What's complete, what's planned, roadmap
+│
+├── STRUCTURE.txt
+│   └── This file
+│       Visual directory structure
+│
+├── 00-foundation/
+│   │
+│   ├── 01-what-is-nix.md ✓ COMPLETE
+│   │   ├── The Problem Nix Solves
+│   │   ├── How Nix is Different
+│   │   ├── Key Nix Concepts
+│   │   ├── The Nix Store
+│   │   └── Real-World Examples
+│   │
+│   ├── 02-what-is-nixos.md ✓ COMPLETE
+│   │   ├── From Package Manager to OS
+│   │   ├── The Core Idea
+│   │   ├── System Composition
+│   │   ├── Key Principles
+│   │   └── Production Use Cases
+│   │
+│   ├── 03-nix-language-basics.md ✓ COMPLETE
+│   │   ├── 5 Core Concepts
+│   │   ├── Attribute Sets
+│   │   ├── Let-In Expressions
+│   │   ├── Functions
+│   │   ├── Common Patterns
+│   │   └── Practice Exercises
+│   │
+│   └── ascii-diagrams.md ✓ COMPLETE
+│       ├── Package Management Comparison
+│       ├── System Composition Flow
+│       ├── Nix Store Structure
+│       ├── Generation Timeline
+│       ├── Declarative vs Imperative
+│       ├── Reproducibility Promise
+│       ├── Learning Layers
+│       └── Misconceptions Clarified
+│
+├── labs/
+│   │
+│   ├── lab-01-first-install/ ✓ COMPLETE
+│   │   ├── README.md
+│   │   │   ├── Prerequisites
+│   │   │   ├── Installation Steps
+│   │   │   ├── First Boot
+│   │   │   ├── Making Changes
+│   │   │   ├── Rollback Practice
+│   │   │   ├── Troubleshooting
+│   │   │   └── Verification Checklist
+│   │   │
+│   │   └── configuration.nix
+│   │       └── Heavily commented starter template
+│   │
+│   ├── lab-02-dev-environment/ (PLANNED)
+│   │   ├── README.md
+│   │   ├── shell.nix
+│   │   ├── TROUBLESHOOTING.md
+│   │   └── examples/
+│   │
+│   ├── lab-03-dev-shells/ (PLANNED)
+│   │   ├── README.md
+│   │   ├── node-shell.nix
+│   │   ├── rust-shell.nix
+│   │   ├── python-shell.nix
+│   │   └── examples/
+│   │
+│   ├── lab-04-multi-host/ (PLANNED)
+│   │   ├── README.md
+│   │   ├── base-config.nix
+│   │   ├── server-01.nix
+│   │   ├── server-02.nix
+│   │   └── networking/
+│   │
+│   ├── lab-05-server-setup/ (PLANNED)
+│   │   ├── README.md
+│   │   ├── configuration.nix
+│   │   └── security-checklist.md
+│   │
+│   ├── lab-06-deployments/ (PLANNED)
+│   │   ├── README.md
+│   │   ├── deployment.nix
+│   │   └── ci-cd-examples/
+│   │
+│   ├── lab-07-home-manager/ (PLANNED)
+│   │   ├── README.md
+│   │   ├── home.nix
+│   │   └── examples/
+│   │
+│   ├── lab-08-flakes/ (PLANNED)
+│   │   ├── README.md
+│   │   ├── flake.nix
+│   │   ├── flake.lock
+│   │   └── templates/
+│   │
+│   └── lab-09-hybrid-infra/ (PLANNED)
+│       ├── README.md
+│       ├── aws-deployment.nix
+│       └── terraform-examples/
+│
+├── reference/
+│   │
+│   ├── common-packages.md (PLANNED)
+│   │   └── Essential packages and where to find them
+│   │
+│   ├── nixpkgs-structure.md (PLANNED)
+│   │   └── Understanding package organization
+│   │
+│   ├── debugging-nix.md (PLANNED)
+│   │   ├── Build failures
+│   │   ├── Runtime errors
+│   │   └── Debugging tools
+│   │
+│   ├── performance-tips.md (PLANNED)
+│   │   └── Caching, optimization, binary caches
+│   │
+│   ├── migration-guide.md (PLANNED)
+│   │   ├── From traditional Linux
+│   │   ├── From Docker
+│   │   └── From other tools
+│   │
+│   ├── security-hardening.md (PLANNED)
+│   │   └── Security best practices
+│   │
+│   └── troubleshooting-index.md (PLANNED)
+│       └── Error messages and solutions
+│
+├── advanced/
+│   │
+│   ├── custom-packages.md (PLANNED)
+│   │   └── Creating your own packages
+│   │
+│   ├── overlays.md (PLANNED)
+│   │   └── Package overriding and customization
+│   │
+│   ├── flakes-advanced.md (PLANNED)
+│   │   └── Complex flake patterns
+│   │
+│   ├── module-system.md (PLANNED)
+│   │   └── Writing NixOS modules
+│   │
+│   ├── nixops.md (PLANNED)
+│   │   └── Declarative multi-system deployments
+│   │
+│   └── contributing.md (PLANNED)
+│       └── Contributing to nixpkgs
+│
+└── examples/
+    │
+    ├── minimal-system/ (PLANNED)
+    │   ├── configuration.nix
+    │   └── README.md
+    │
+    ├── dev-workstation/ (PLANNED)
+    │   ├── configuration.nix
+    │   ├── home.nix
+    │   └── README.md
+    │
+    ├── server-setup/ (PLANNED)
+    │   ├── web-server/
+    │   ├── api-server/
+    │   ├── database-server/
+    │   └── monitoring-stack/
+    │
+    ├── docker-integration/ (PLANNED)
+    │   └── configuration.nix
+    │
+    ├── flake-templates/ (PLANNED)
+    │   ├── project-template/
+    │   ├── python-app/
+    │   ├── node-app/
+    │   ├── go-service/
+    │   └── rust-service/
+    │
+    ├── terraform-examples/ (PLANNED)
+    │   ├── aws-deployment/
+    │   ├── gcp-deployment/
+    │   └── multi-cloud/
+    │
+    └── ci-cd-examples/ (PLANNED)
+        ├── github-actions/
+        ├── gitlab-ci/
+        ├── jenkins/
+        └── custom-automation/
+
+
+Status Legend:
+==============
+✓ COMPLETE   - Ready to use
+🔄 PLANNED   - Designed, ready to build
+❌ TODO      - Identified but not yet designed
+
+
+Course Statistics:
+===================
+Total Pages (Complete): ~35 pages
+Total Pages (Planned): ~150+ pages
+
+Foundation Materials: 30+ pages
+Labs: 80+ pages (9 labs × ~9 pages each)
+Reference: 20+ pages
+Advanced Topics: 25+ pages
+Examples: 15+ pages
+
+
+Learning Paths Available:
+==========================
+• 2-Hour Quick Start: Foundation + Lab 1
+• 4-Hour Developer Path: Foundation + Labs 1-3
+• 6-Hour Operations Path: Foundation + Labs 1,4,5
+• 8-Hour Production Path: Foundation + Labs 1,4,5,6,8
+• 16-Hour Mastery Path: All foundation + all labs
+
+Estimated Total Time When Complete: 40-60 hours
+(Foundation: 2-4 hours, Labs: 30-40 hours, Practice: 8-16 hours)
+
+
+Key Features:
+=============
+✓ Explain Like I'm 5 methodology
+✓ Heavily commented code examples
+✓ Multiple learning styles (reading, diagrams, hands-on)
+✓ Production-ready configurations
+✓ Extensive troubleshooting guides
+✓ Real-world examples
+✓ Progressive difficulty
+✓ Quick start for impatient learners
+✓ Role-based learning paths
+✓ Verification checklists
+
+
+How to Navigate:
+=================
+1. START HERE: README.md (main overview)
+2. CHOOSE PATH: QUICKSTART.md (select by role/time)
+3. LEARN: Foundation materials in order
+4. PRACTICE: Labs in sequence
+5. REFERENCE: Use as needed
+6. EXPLORE: Examples and advanced topics
+
+
+Course Design Principles:
+==========================
+• Never toy examples - all production-ready
+• Explain why, not just what
+• Multiple explanations for different learners
+• Progressive complexity with spiral reinforcement
+• Safety first - rollback is always possible
+• Community-focused - contribute back to nixpkgs
+
+
+Questions or Improvements:
+===========================
+This course is designed to be expanded and improved.
+See CURRICULUM.md for how to contribute new materials.
+
+The goal: Make NixOS accessible to everyone.
+

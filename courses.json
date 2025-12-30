@@ -1,0 +1,633 @@
+{
+  "repository": "labs",
+  "description": "Production-ready SRE/DevOps educational materials",
+  "version": "0.0.1",
+  "generatedWith": "Claude AI - customized, modified, and completed",
+  "lastUpdated": "2024-12-05",
+  "courses": [
+    {
+      "id": "terraform",
+      "name": "Terraform for Infrastructure as Code",
+      "description": "Comprehensive guide to Terraform fundamentals and advanced patterns",
+      "category": "Infrastructure Automation",
+      "difficulty": "beginner-to-advanced",
+      "estimatedHours": 40,
+      "prerequisites": ["bash-basics", "cli-fundamentals"],
+      "topics": [
+        "infrastructure-as-code",
+        "state-management",
+        "modules",
+        "variables",
+        "aws",
+        "multi-environment-deployment"
+      ],
+      "path": "./terraform",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 16
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 12
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes Comprehensive Course",
+      "description": "8-part deep dive into Kubernetes concepts, deployment, and operations",
+      "category": "Container Orchestration",
+      "difficulty": "beginner-to-advanced",
+      "estimatedHours": 60,
+      "prerequisites": ["docker-basics", "bash-basics"],
+      "topics": [
+        "kubernetes",
+        "containers",
+        "orchestration",
+        "deployments",
+        "networking",
+        "storage",
+        "monitoring",
+        "gitops"
+      ],
+      "path": "./kubernetes",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 10
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 15
+        },
+        {
+          "name": "Storage & Configuration",
+          "folder": "03-storage-and-config",
+          "estimatedHours": 12
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "04-advanced-patterns",
+          "estimatedHours": 12
+        },
+        {
+          "name": "Operations",
+          "folder": "05-operations",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Labs",
+          "folder": "06-labs",
+          "estimatedHours": 3
+        }
+      ]
+    },
+    {
+      "id": "bash",
+      "name": "Bash Scripting Essentials",
+      "description": "From basics to production-grade scripts and automation",
+      "category": "Core Skills",
+      "difficulty": "beginner-to-intermediate",
+      "estimatedHours": 30,
+      "prerequisites": [],
+      "topics": [
+        "bash",
+        "shell-scripting",
+        "automation",
+        "error-handling",
+        "logging",
+        "system-administration"
+      ],
+      "path": "./bash",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 6
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 12
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "go",
+      "name": "Go Programming for Metrics & Backend Services",
+      "description": "Building production-grade metrics collection systems and microservices",
+      "category": "Programming Languages",
+      "difficulty": "intermediate-to-advanced",
+      "estimatedHours": 50,
+      "prerequisites": ["bash-basics", "programming-fundamentals"],
+      "topics": [
+        "go",
+        "grpc",
+        "protocol-buffers",
+        "metrics",
+        "microservices",
+        "concurrency",
+        "testing"
+      ],
+      "path": "./go",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 16
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 16
+        },
+        {
+          "name": "Systems Integration",
+          "folder": "04-systems-integration",
+          "estimatedHours": 6
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "nixos",
+      "name": "NixOS Comprehensive Curriculum",
+      "description": "24-file modular learning path for declarative system configuration",
+      "category": "System Administration",
+      "difficulty": "beginner-to-advanced",
+      "estimatedHours": 80,
+      "prerequisites": ["bash-basics"],
+      "topics": [
+        "nix",
+        "nixos",
+        "configuration-management",
+        "reproducibility",
+        "home-manager",
+        "flakes",
+        "development-environments"
+      ],
+      "path": "./nixos",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 10
+        },
+        {
+          "name": "Core Configuration",
+          "folder": "02-core-configuration",
+          "estimatedHours": 20
+        },
+        {
+          "name": "Advanced Nix",
+          "folder": "03-advanced-nix",
+          "estimatedHours": 20
+        },
+        {
+          "name": "Reproducibility",
+          "folder": "04-reproducibility",
+          "estimatedHours": 15
+        },
+        {
+          "name": "Operations",
+          "folder": "05-operations",
+          "estimatedHours": 10
+        },
+        {
+          "name": "Labs",
+          "folder": "06-labs",
+          "estimatedHours": 5
+        }
+      ]
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible Configuration Management",
+      "description": "Playbook design, roles, and enterprise automation patterns",
+      "category": "Infrastructure Automation",
+      "difficulty": "beginner-to-advanced",
+      "estimatedHours": 40,
+      "prerequisites": ["bash-basics", "cli-fundamentals"],
+      "topics": [
+        "ansible",
+        "configuration-management",
+        "playbooks",
+        "roles",
+        "inventory",
+        "automation"
+      ],
+      "path": "./ansible",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 16
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 12
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "monitoring",
+      "name": "Prometheus & Grafana at Scale",
+      "description": "Building comprehensive monitoring and alerting systems",
+      "category": "Observability",
+      "difficulty": "intermediate",
+      "estimatedHours": 35,
+      "prerequisites": ["bash-basics", "kubernetes-basics"],
+      "topics": [
+        "prometheus",
+        "grafana",
+        "metrics",
+        "alerting",
+        "observability",
+        "time-series-data",
+        "dashboards"
+      ],
+      "path": "./monitoring",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 14
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 5
+        }
+      ]
+    },
+    {
+      "id": "logging",
+      "name": "Centralized Logging Architecture",
+      "description": "ELK Stack setup, log aggregation, and analysis patterns",
+      "category": "Observability",
+      "difficulty": "intermediate",
+      "estimatedHours": 35,
+      "prerequisites": ["bash-basics"],
+      "topics": [
+        "elasticsearch",
+        "logstash",
+        "kibana",
+        "logging",
+        "log-aggregation",
+        "analysis"
+      ],
+      "path": "./logging",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 14
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 5
+        }
+      ]
+    },
+    {
+      "id": "gitops",
+      "name": "GitOps: Infrastructure as Configuration",
+      "description": "Flux & ArgoCD for declarative infrastructure and deployment",
+      "category": "Deployment Patterns",
+      "difficulty": "intermediate-to-advanced",
+      "estimatedHours": 35,
+      "prerequisites": ["git-basics", "kubernetes-basics"],
+      "topics": [
+        "gitops",
+        "flux",
+        "argocd",
+        "kustomize",
+        "declarative-infrastructure",
+        "deployment"
+      ],
+      "path": "./gitops",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 14
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 5
+        }
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Networking for Infrastructure Engineers",
+      "description": "TCP/IP, DNS, firewalls, load balancing, and network design",
+      "category": "Infrastructure Fundamentals",
+      "difficulty": "beginner-to-intermediate",
+      "estimatedHours": 40,
+      "prerequisites": [],
+      "topics": [
+        "networking",
+        "tcp-ip",
+        "dns",
+        "routing",
+        "firewalls",
+        "load-balancing",
+        "vpn",
+        "service-mesh"
+      ],
+      "path": "./networking",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 10
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 16
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 10
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "llm-deployment",
+      "name": "LLM Deployment Strategies",
+      "description": "Cloud-hosted and local LLM deployments with infrastructure integration",
+      "category": "Emerging Technologies",
+      "difficulty": "intermediate-to-advanced",
+      "estimatedHours": 30,
+      "prerequisites": ["kubernetes-basics", "infrastructure-basics"],
+      "topics": [
+        "llm",
+        "ai-infrastructure",
+        "model-serving",
+        "gpu-optimization",
+        "inference",
+        "kubernetes"
+      ],
+      "path": "./llm-deployment",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 6
+        },
+        {
+          "name": "Cloud Deployment",
+          "folder": "02-cloud-deployment",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Local Deployment",
+          "folder": "03-local-deployment",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Infrastructure Patterns",
+          "folder": "04-infrastructure-patterns",
+          "estimatedHours": 6
+        },
+        {
+          "name": "Labs",
+          "folder": "05-labs",
+          "estimatedHours": 2
+        }
+      ]
+    },
+    {
+      "id": "ebpf",
+      "name": "Kernel-Level Observability with eBPF",
+      "description": "eBPF fundamentals and Rust for advanced system tracing and monitoring",
+      "category": "Advanced Observability",
+      "difficulty": "advanced",
+      "estimatedHours": 50,
+      "prerequisites": ["bash-basics", "systems-programming-basics"],
+      "topics": [
+        "ebpf",
+        "rust",
+        "kernel-tracing",
+        "performance-monitoring",
+        "security",
+        "observability"
+      ],
+      "path": "./ebpf",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 10
+        },
+        {
+          "name": "Core Skills",
+          "folder": "02-core-skills",
+          "estimatedHours": 20
+        },
+        {
+          "name": "Advanced Patterns",
+          "folder": "03-advanced-patterns",
+          "estimatedHours": 15
+        },
+        {
+          "name": "Labs",
+          "folder": "04-labs",
+          "estimatedHours": 5
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases for Backend Engineers",
+      "description": "SQL, NoSQL, optimization, replication, and operational best practices",
+      "category": "Data Infrastructure",
+      "difficulty": "beginner-to-advanced",
+      "estimatedHours": 50,
+      "prerequisites": ["bash-basics"],
+      "topics": [
+        "databases",
+        "sql",
+        "nosql",
+        "optimization",
+        "replication",
+        "backup",
+        "monitoring",
+        "high-availability"
+      ],
+      "path": "./databases",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "folder": "01-fundamentals",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Relational Databases",
+          "folder": "02-relational-databases",
+          "estimatedHours": 18
+        },
+        {
+          "name": "NoSQL Databases",
+          "folder": "03-nosql-databases",
+          "estimatedHours": 12
+        },
+        {
+          "name": "Operations",
+          "folder": "04-operations",
+          "estimatedHours": 8
+        },
+        {
+          "name": "Labs",
+          "folder": "05-labs",
+          "estimatedHours": 4
+        }
+      ]
+    }
+  ],
+  "learningPaths": [
+    {
+      "id": "weekend-refresher",
+      "name": "Weekend Refresher",
+      "description": "Quick refresher for experienced engineers",
+      "estimatedHours": 12,
+      "courses": ["bash", "terraform", "networking"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "intermediate-sre",
+      "name": "Intermediate SRE Foundation",
+      "description": "Comprehensive foundational knowledge for 2-4 weeks",
+      "estimatedHours": 50,
+      "courses": ["bash", "terraform", "kubernetes", "monitoring", "networking"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "advanced-sre",
+      "name": "Advanced SRE Mastery",
+      "description": "Deep expertise across the full stack",
+      "estimatedHours": 150,
+      "courses": ["bash", "terraform", "ansible", "kubernetes", "nixos", "go", "gitops", "monitoring", "logging", "networking", "databases"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "cloud-native",
+      "name": "Cloud-Native Specialist",
+      "description": "Focus on cloud-native technologies",
+      "estimatedHours": 70,
+      "courses": ["kubernetes", "gitops", "llm-deployment", "ebpf"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "systems-engineering",
+      "name": "Systems Engineering Specialist",
+      "description": "Deep systems programming and observability",
+      "estimatedHours": 90,
+      "courses": ["nixos", "ebpf", "networking", "databases"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "automation-iac",
+      "name": "Automation & IaC Specialist",
+      "description": "Focus on infrastructure automation",
+      "estimatedHours": 70,
+      "courses": ["terraform", "ansible", "bash", "gitops"],
+      "difficulty": "intermediate"
+    }
+  ],
+  "topics": {
+    "automation": ["terraform", "ansible", "bash"],
+    "observability": ["monitoring", "logging", "ebpf"],
+    "kubernetes": ["kubernetes", "gitops"],
+    "infrastructure": ["terraform", "ansible", "nixos", "networking"],
+    "programming": ["go", "bash"],
+    "databases": ["databases"],
+    "deployment": ["gitops", "llm-deployment"],
+    "advanced": ["ebpf", "nixos"]
+  }
+}
